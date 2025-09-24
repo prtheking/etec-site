@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETEC Darcy Pereira de Morães - Cursos Técnicos Integrados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #034EA2 0%, #001E4E 100%);
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6r_BKVhcf3ZMS4tRNj9xsnTpp1Sxfnvc2EQ&s" alt="Logo da ETEC Darcy Pereira de Morães" class="mr-4">
+                    <div>
+                        <h1 class="text-2xl font-bold">ETEC Darcy Pereira de Morães</h1>
+                        <p class="text-blue-100">Itapetininga - São Paulo</p>
+                    </div>
+                </div>
+                <nav class="flex space-x-4">
+                    <a href="#cursos" class="hover:text-blue-300 transition">Cursos</a>
+                    <a href="#datas" class="hover:text-blue-300 transition">Datas</a>
+                    <a href="#inscricao" class="hover:text-blue-300 transition">Inscrição</a>
+                    <a href="#contato" class="hover:text-blue-300 transition">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4">Cursos Técnicos Integrados ao Ensino Médio</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Formação técnica de qualidade com ensino médio integrado, preparando você para o mercado de trabalho e para o ensino superior.</p>
+            <a href="#inscricao" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition inline-block">Faça sua inscrição</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Sobre a ETEC</h2>
+                <p class="text-gray-600 mb-6">
+                    A ETEC Darcy Pereira de Morães é uma instituição de ensino técnico de excelência, 
+                    localizada em Itapetininga-SP, que oferece educação de qualidade integrando o ensino médio 
+                    com formação técnica profissionalizante através do programa MTec.
+                </p>
+                <p class="text-gray-600">
+                    Nossos cursos são reconhecidos pelo mercado de trabalho e proporcionam aos estudantes 
+                    uma formação completa, permitindo que ao final dos três anos, o aluno esteja preparado 
+                    tanto para ingressar no ensino superior quanto para atuar profissionalmente na área de sua formação.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="cursos" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Nossos Cursos MTec 2025</h2>
+            
+            <!-- Manhã -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center">
+                    <span class="bg-amber-500 text-white p-2 rounded mr-3">🌅</span>
+                    Período da Manhã
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Administração -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Administração - MTec Integrado/AMS</h4>
+                        <p class="text-gray-600 mb-4">Formação em gestão empresarial, processos administrativos e empreendedorismo.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Marketing -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Marketing - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Desenvolvimento de estratégias de mercado, comunicação e gestão de marcas.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Recursos Humanos -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Recursos Humanos - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Gestão de pessoas, recrutamento, treinamento e desenvolvimento organizacional.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Segurança do Trabalho -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Segurança do Trabalho - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Prevenção de acidentes, normas de segurança e saúde ocupacional nas empresas.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tarde -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold mb-8 flex items-center">
+                    <span class="bg-orange-500 text-white p-2 rounded mr-3">🌇</span>
+                    Período da Tarde
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Comércio Exterior -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Comércio Exterior - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Operações de importação e exportação, logística internacional e negócios globais.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Cuidador de Idosos -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Cuidador de Idosos - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Cuidados com idosos, saúde geriátrica e promoção da qualidade de vida na terceira idade.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Informática para Internet -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Informática para Internet - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Desenvolvimento web, programação, design digital e tecnologias para internet.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Noite -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-8 flex items-center">
+                    <span class="bg-indigo-600 text-white p-2 rounded mr-3">🌃</span>
+                    Período da Noite
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Desenvolvimento de Sistemas -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Desenvolvimento de Sistemas - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Análise, projeto e desenvolvimento de sistemas computacionais e aplicativos.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Logística -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Logística - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Gestão da cadeia de suprimentos, transporte, armazenagem e distribuição.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Serviços Jurídicos -->
+                    <div class="course-card bg-white rounded-lg shadow-md p-6 transition duration-300">
+                        <h4 class="text-xl font-semibold mb-3 text-blue-800">Serviços Jurídicos - MTec Integrado</h4>
+                        <p class="text-gray-600 mb-4">Noções jurídicas, processos judiciais, assessoria e documentação legal.</p>
+                        <div class="text-sm text-gray-500">
+                            <p><strong>Vagas:</strong> 40</p>
+                            <p><strong>Duração:</strong> 3 anos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dates and Pricing Section -->
+    <section id="datas" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Processo Seletivo 2025</h2>
+            <div class="max-w-4xl mx-auto bg-blue-50 rounded-xl p-8 shadow-md">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-800">Datas Importantes</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📅</span>
+                                <div>
+                                    <p class="font-semibold">Solicitação de Redução da Taxa</p>
+                                    <p class="text-gray-600">29/10 a 30/10/2024 (via upload no site vestibulinhoetec.com.br)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📝</span>
+                                <div>
+                                    <p class="font-semibold">Inscrições Gerais</p>
+                                    <p class="text-gray-600">31/10/2024 até 15h de 26/11/2024 (vestibulinhoetec.com.br)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📝</span>
+                                <div>
+                                    <p class="font-semibold">Inscrições para Beneficiados com Redução</p>
+                                    <p class="text-gray-600">A partir de 15h de 05/11/2024 até 15h de 26/11/2024</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📊</span>
+                                <div>
+                                    <p class="font-semibold">Resultado da Solicitação de Redução</p>
+                                    <p class="text-gray-600">05/11/2024, a partir das 15h</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">⚖️</span>
+                                <div>
+                                    <p class="font-semibold">Prazo para Recurso (Indeferidos)</p>
+                                    <p class="text-gray-600">06/11 a 07/11/2024</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📋</span>
+                                <div>
+                                    <p class="font-semibold">Análise dos Recursos de Redução</p>
+                                    <p class="text-gray-600">A partir de 14/11/2024</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📍</span>
+                                <div>
+                                    <p class="font-semibold">Divulgação dos Locais de Exame</p>
+                                    <p class="text-gray-600">11/12/2024, a partir das 15h</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📝</span>
+                                <div>
+                                    <p class="font-semibold">Prova do Vestibulinho</p>
+                                    <p class="text-gray-600">15/12/2024 às 13h30</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📊</span>
+                                <div>
+                                    <p class="font-semibold">Gabaritos Oficiais</p>
+                                    <p class="text-gray-600">18/12/2024, a partir das 15h</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">🎓</span>
+                                <div>
+                                    <p class="font-semibold">Classificação Geral e Convocação para Prova de Aptidão</p>
+                                    <p class="text-gray-600">06/01/2025, a partir das 15h (para cursos com prova de aptidão)</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">🎓</span>
+                                <div>
+                                    <p class="font-semibold">Provas de Aptidão (Canto, Dança, Teatro e Especialização Técnica em Dança a Dois)</p>
+                                    <p class="text-gray-600">07/01 a 08/01/2025</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="bg-blue-100 text-blue-800 rounded-full p-2 mr-3">📋</span>
+                                <div>
+                                    <p class="font-semibold">Lista de Classificação Geral e Resultado da Prova de Aptidão</p>
+                                    <p class="text-gray-600">13/01/2025, a partir das 15h (para todos os cursos, incluindo MTec)</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="mt-4 text-sm text-gray-500 italic">* Para os cursos MTec Integrados, não há prova de aptidão. A classificação é baseada na prova do Vest
+                        <div class="bg-white rounded-lg p-6 shadow-sm">
+                            <h4 class="font-semibold mb-3">Conteúdo da Prova:</h4>
+                            <ul class="text-gray-600 space-y-2">
+                                <li>• Língua Portuguesa</li>
+                                <li>• Matemática</li>
+                                <li>• História e Geografia</li>
+                                <li>• Ciências da Natureza</li>
+                                <li>• Atualidades</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="inscricao" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Faça sua Inscrição</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">
+                Inscreva-se no processo seletivo 2025 para garantir sua vaga em um dos nossos cursos técnicos integrados.
+            </p>
+            <a href="https://www.vestibulinhoetec.com.br" target="_blank" class="bg-white text-blue-800 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition inline-block">
+                Acessar o Vestibulinho
+            </a>
+            <p class="mt-6 text-blue-100">Site oficial: www.vestibulinhoetec.com.br</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-blue-800">Informações da Escola</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <span class="text-blue-800 mr-3">📍</span>
+                            <p class="text-gray-600">Rua Professor Orlando de Almeida, 511 - Vila Ballista, Itapetininga - SP</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-800 mr-3">📞</span>
+                            <p class="text-gray-600">(15) 3371-7833</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-800 mr-3">✉️</span>
+                            <p class="text-gray-600">e095acad@cps.sp.gov.br</p>
+                        </div>
+                        <div class="flex items-start">
+                            <span class="text-blue-800 mr-3">🌐</span>
+                            <p class="text-gray-600">www.etecitapetininga.com.br</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-blue-800">Horário de Atendimento</h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Segunda a Sexta</span>
+                            <span class="font-semibold">7h às 22h</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Sábado</span>
+                            <span class="font-semibold">8h às 12h</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-3">Secretaria Acadêmica</h4>
+                        <p class="text-gray-600">Segunda a sexta, das 8h às 17h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">ETEC Darcy Pereira de Morães</h3>
+                    <p class="text-gray-400">Formando profissionais técnicos de excelência desde 2007.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#cursos" class="text-gray-400 hover:text-white transition">Cursos</a></li>
+                        <li><a href="#datas" class="text-gray-400 hover:text-white transition">Datas Importantes</a></li>
+                        <li><a href="#inscricao" class="text-gray-400 hover:text-white transition">Inscrição</a></li>
+                        <li><a href="#contato" class="text-gray-400 hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Centro Paula Souza</h3>
+                    <p class="text-gray-400">Instituição mantenedora das ETECs e FATECs do Estado de São Paulo.</p>
+                    <a href="https://www.cps.sp.gov.br" target="_blank" class="text-blue-400 hover:underline mt-2 inline-block">www.cps.sp.gov.br</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 ETEC Darcy Pereira de Morães. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for enhancing user experience
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Add animation to course cards when they come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all course cards
+            document.querySelectorAll('.course-card').forEach(card => {
+                card.classList.add('opacity-0', 'translate-y-10', 'transition', 'duration-700');
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
